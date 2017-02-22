@@ -8,8 +8,15 @@ Modality
 ===
 
 	Insert  - Brush is on the canvas
+		Insert -> Normal : ESC/Ctrl-[
+		Insert -> Command : (Insert -> Normal) -> :
+	
 	Normal  - Brush is off the canvas
+		Normal -> Comand : :
+		Normal -> Insert : iIsScCoO
+	
 	Command - Mixing your pallette
+		Comand -> Normal : Enter
 
 Starting Vim
 ===
@@ -30,10 +37,6 @@ Pen to the page
 	O - enter insert mode on the above line
 	C - Delete from cursor to end of line and begin insert
 
-	This is a test sentence
-	
-(Next class will cover 'c')
-
 Picking up the brush
 ===
 
@@ -49,14 +52,6 @@ Scanning the canvas
 	    v
 	    j
 
-"Why hjkl and not jkl;?"
-===
-Because go to the next class
-
-"They invented the mouse, why not use that?"
-===
-La la la la, I can't hear you
-
 Getting from a to b: Motions
 ===
 Basics: wWbBeE
@@ -67,6 +62,13 @@ Basics: wWbBeE
 	B - Backward to the next beginning of a WORD
 	e - Forward to the next end of word
 	E - Forward to the next end of WORD
+	
+	0 - Move you to the zeroth character of the line
+	$ - Move you to the last character of the line
+	^ - First non-blank character of the line
+	
+	gg - at the begining
+	G - go to the end of file
 
 Slightly less basic: fFtT
 All follow [(n)um]<verb><n(o)un> syntax
@@ -96,7 +98,17 @@ Copy/Paste
 ===
 
 	y - Yank. Example: yw (yank word)
+	yy - copy the line
 	p - paste after cursor
 	P - paste before cursor
+	v - visual selection
 
+Undoing your changes
+===
+	u - undo stuff
+	Ctrl-R - redo stuff
+
+Select the whole file
+===
+	gg v G
 # vim: set syn=mkd :
